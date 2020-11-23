@@ -89,9 +89,10 @@ or are coded in more detail. Oxford coded variables can be distinguished
 by their preceding variable name and oxford (for example C1\_oxford\_).
 All other variables have self-explanatory variable names and are coded
 as either factors with self-explanatory levels or as numerical.  
-Find below a overview table over the non-oxford variable. Please refer
-to the oxford code book linked above for description on the oxford
-variables.
+The “COVID\_measures\_KT\_epi.csv” data set contains additional variables that are directly imported from the [COVID_19 open government data](https://www.zh.ch/de/politik-staat/opendata.html?keyword=ogd#/details/673@fachstelle-ogd-kanton-zuerich) from canton Zurich. 
+
+Find below a overview table over the non-oxford measures variables. Please refer to the oxford code book linked above for description on the oxford
+variables.  
 
 | Variable name                        | Description                                                                                                     | Levels / Range                                            | Comment                                                              |
 | ------------------------------------ | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | -------------------------------------------------------------------- |
