@@ -33,57 +33,48 @@ The data is collated and available in several file formats.
     available via the [open government
     data](https://www.zh.ch/de/politik-staat/opendata.html?keyword=ogd#/details/673@fachstelle-ogd-kanton-zuerich)
     from canton Zurich.
-    
-  - The "COVID\_measures\_KT\_epi\_foph.csv" data set contains the
-    cantonal measures plus the epidemiological data by canton that is
-    available via the [COVID-19 dashboard](https://www.covid19.admin.ch/de/overview) of the federal office for public health.  
 
-## Sources
-
-Implementation and relaxation timings for each measure are assembled from four main sources.
-We are unaware of an official overview of measures, thus sources are
-either newspapers, Wikipedia, or handcrafted documents from others
-that were translated to machine readable data here. Where possible, ordinances from each canton where checked to verify dates. As of 25th November, the main sources are:
+## Sources    
+The timings of implementation and relaxation of cantonal measures have been collected from several different sources and translated to machine readable form here. Where possible, ordinances from each canton where checked to verify dates. Find below a list of current sources.
 
   - [GDK-CDS](https://www.gdk-cds.ch/de/praevention-und-gesundheitsfoerderung/neues-coronavirus):
     Overview created by the conference of the health-directors. By
     canton, and then by date, contains some
-    links.
+    links. No explicit mention of a license.
 
   - [Wikipedia](https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_der_Schweiz#Chronologie_der_Reaktionen_und_Massnahmen):
     Overview of measures by time, with little other detail provided. Often contains links to
     sources, many links are outdated and just point to overview
-    pages.
+    pages. Wikipedia is licensed under a [CC BY-SA-3.0 license](https://creativecommons.org/licenses/by-sa/3.0/).
 
   - [Watson](https://www.watson.ch/schweiz/coronavirus/523168911-neue-corona-regeln-schweiz-diese-massnahmen-gelten-in-deinem-kanton):
-    Overview of current measures by canton and the date when they came into action. Past dates not available.
+    Overview of current measures by canton and the date when they came into action. Past dates not available. No explicit mention of a license.
 
   - A document created by Sandra Flückiger of the ETH-Rat communications
     team that details the measures either by canton or federal and some
-    international measures as well.
+    international measures as well. Usage granted.
 
   - The \_openZH epidemiological data stems from the [open government
     data](https://www.zh.ch/de/politik-staat/opendata.html?keyword=ogd#/details/673@fachstelle-ogd-kanton-zuerich)
-    from canton Zurich, this data set is sometimes also referred to as
+    from canton Zurich, which is distributed under a [CC BY-4.0 license](https://creativecommons.org/licenses/by/4.0/). This data set is sometimes colloquially referred to as
     openZH.
     
-  - The \_foph epidemiological data stems from the [COVID-19 dashboard](https://www.covid19.admin.ch/de/overview) of the federal office for public health.  
-    
-## Accuracy
 
+## License
+As different sources with different licenses were used, we believe that a [CC BY-SA-4.0 license](https://creativecommons.org/licenses/by-sa/4.0/) is applicable to this work. The original work remains of course under its original license.  
+
+## Accuracy
 As this data set is curated by hand, it is shared without guarantee. The data set will be updated
 irregularly. 
 
 WARNING: Even though all care was taken to create this data
 set, and where possible, timings and measures are verified at source (level of
 cantonal ordinances), there are likely to be some
-mistakes/or mismatches. We can not guarantee data quality and take no
+mistakes/or mismatches. No guarantee for data quality is given and no
 responsibility whatsoever for any liability as a result of use of this
-data. We are of course happy for any inputs if you find alternative
-sources to correct dates or measures.
+data is taken. If you have alternative sources, would like to correct dates or measures or have any other type of input please get in touch with us.
 
 ## Variables
-
 Variables are either coded according to the Oxford coronavirus
 government response tracker code book, which can be found
 [here](https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker),
@@ -91,7 +82,7 @@ or are coded in more detail to reflect measures in Switzerland. Oxford coded var
 by their preceding variable name and oxford (for example C1\_oxford\_). Please refer to the [oxford code book](https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker) for descriptions on all oxford
 variables. All other variables have self-explanatory variable names and are coded
 as either factors with self-explanatory levels or as numerical.  
-The “COVID\_measures\_KT\_epi_openZH.csv” and the “COVID\_measures\_KT\_epi_foph.csv” data sets contain additional variables that are directly imported from their sources (see above). Those additional epidemiological variables have been renamed with self-explanatory variable names, but their exact coding schemes are unknown to us.  
+The “COVID\_measures\_KT\_epi_openZH.csv” data set contains additional variables that are directly imported from their source (see above). Those additional epidemiological variables have been renamed with self-explanatory variable names, but their exact coding schemes are unknown to us.  
 
 Below please find an overview table of the non-oxford measures variables.   
 
