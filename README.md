@@ -79,7 +79,7 @@ Variables are either coded according to the Oxford coronavirus
 government response tracker code book, which can be found
 [here](https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker),
 or are coded in more detail to reflect measures in Switzerland. Oxford coded variables can be distinguished
-by their preceding variable name and oxford (for example C1\_oxford\_). Please refer to the [oxford code book](https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker) for descriptions on all oxford
+by their preceding variable name or oxford (for example C1\_oxford\_ or oxford\_containment\_health). Please refer to the [oxford code book](https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker) for descriptions on all oxford
 variables. All other variables have self-explanatory variable names and are coded
 as either factors with self-explanatory levels or as numerical.  
 The “COVID\_measures\_KT\_epi_openZH.csv” data set contains additional variables that are directly imported from their source (see above). Those additional epidemiological variables have been renamed with self-explanatory variable names, but their exact coding schemes are unknown to us.  
