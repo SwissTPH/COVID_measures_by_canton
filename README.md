@@ -1,13 +1,14 @@
 COVID\_measures\_CH
 ================
 Robert Pascal Dünner
-11/23/2020
+12/17/2020
 
 ## Introduction
 
 These data sets were created to track the implementation and relaxation dates of all non-pharmaceutical measures against SARS-CoV-2 in each canton of Switzerland. 
 
-As of November 2020, there are several federally mandated measures in place across the whole of Switzerland. However, cantons are free to implement additional (or more restrictive) measures. Thus the collated data here includes both the federal measures that are identical across all cantons, as well as additional more restrictive measures by canton layered on top of the federal measures.
+As of November 2020, there are several federally mandated measures in place across the whole of Switzerland. However, cantons are free to implement additional (or more restrictive) measures. Thus the collated data here includes both the federal measures that are identical across all cantons, as well as additional more restrictive measures by canton layered on top of the federal measures.  
+As of beginning of December a lot of new measures, both federal and cantonal, have been implemented that concern the opening hours of businesses, restaurants etc. Those measures are only very badly represented in this data set, as it does not track opening hours. 
 
 ## Data set
 
@@ -32,7 +33,8 @@ The data is collated and available in several file formats.
     cantonal measures plus the epidemiological data by canton that is
     available via the [open government
     data](https://www.zh.ch/de/politik-staat/opendata.html?keyword=ogd#/details/673@fachstelle-ogd-kanton-zuerich)
-    from canton Zurich.
+    from canton Zurich.  
+    It also contains the maximum daily temperature for 16 cantons that is available from [MeteoSchweiz](https://www.meteoschweiz.admin.ch/home.html?tab=overview) via [opendata.swiss]("https://data.geo.admin.ch/ch.meteoschweiz.klima/nbcn-tageswerte/liste-download-nbcn-d.csv").
 
 ## Sources    
 The timings of implementation and relaxation of cantonal measures have been collected from several different sources and translated to machine readable form here. Where possible, ordinances from each canton where checked to verify dates. Find below a list of current sources.
@@ -57,8 +59,9 @@ The timings of implementation and relaxation of cantonal measures have been coll
   - The \_openZH epidemiological data stems from the [open government
     data](https://www.zh.ch/de/politik-staat/opendata.html?keyword=ogd#/details/673@fachstelle-ogd-kanton-zuerich)
     from canton Zurich, which is distributed under a [CC BY-4.0 license](https://creativecommons.org/licenses/by/4.0/). This data set is sometimes colloquially referred to as
-    openZH.
+    openZH.  
     
+  - The temperature data stems from [MeteoSchweiz](https://www.meteoschweiz.admin.ch/home.html?tab=overview) via [opendata.swiss]("https://data.geo.admin.ch/ch.meteoschweiz.klima/nbcn-tageswerte/liste-download-nbcn-d.csv"). It is published under copyright licence by the Swiss federal authorities and granted non-comercial use and distribution under mention of the source.
 
 ## License
 As different sources with different licenses were used, we believe that a [CC BY-SA-4.0 license](https://creativecommons.org/licenses/by-sa/4.0/) is applicable to this work. The original work remains of course under its original license.  
