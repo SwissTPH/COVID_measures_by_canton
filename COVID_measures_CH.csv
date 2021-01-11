@@ -1,4 +1,3 @@
-<<<<<<< HEAD,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 date,canton,C1_oxford_school_closing,school_primary_secondary,school_highschool,school_university,C2_oxford_workplace_closing,home_office_recommended,leisure,sport,shops,hairdressers,church,restaurants,restaurants_tablesize,clubs,clubs_npeople,C3_oxford_cancel_public_events,C4_oxford_restrictions_on_gatherings,public_events_npeople,gatherings_npeople,C5_oxford_close_public_transport,C6_oxford_stay_at_home,C7_oxford_restriction_internal_movement,C8_oxford_international_travel_control,H1_oxford_public_info_campaigns,H2_oxford_testing_policy,H3_oxford_contact_tracing,H6_oxford_facial_coverings,facial_coverings_shops,facial_coverings_public_buildings,facial_coverings_schools,oxford_containment_health
 01.01.20,AG,0,open,open,open,0,no,open,open,open,open,open,open,,open,,0,0,,,0,0,0,0,0,0,0,0,no,no,no,0
 02.01.20,AG,0,open,open,open,0,no,open,open,open,open,open,open,,open,,0,0,,,0,0,0,0,0,0,0,0,no,no,no,0
@@ -10017,4 +10016,3 @@ date,canton,C1_oxford_school_closing,school_primary_secondary,school_highschool,
 03.01.21,CH,3,closed,closed,closed,2,yes,closed,closed,open_with_measures,open_with_measures,open_with_measures,closed,0,closed,0,2,3,0,10,0,1,0,3,2,2,1,3,yes,yes,yes,61.80555556
 04.01.21,CH,3,closed,closed,closed,2,yes,closed,closed,open_with_measures,open_with_measures,open_with_measures,closed,0,closed,0,2,3,0,10,0,1,0,3,2,2,1,3,yes,yes,yes,61.80555556
 05.01.21,CH,2,open_with_measures,open_with_measures,closed,2,yes,closed,closed,open_with_measures,open_with_measures,open_with_measures,closed,0,closed,0,2,3,0,10,0,1,0,3,2,2,1,3,yes,yes,yes,59.02777778
->>>>>>> 5e0f20bc3607fa86dd78acc81e8430e4804fdeec,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
