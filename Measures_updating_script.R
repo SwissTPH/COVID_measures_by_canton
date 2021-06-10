@@ -26,7 +26,7 @@ file_path <- paste(directory_location, "COVID_measures_CH.ods", sep = "")
 
 # Do you want to just expand the measures to the current date or 
 # also update some measures? Date expansion is done either way.
-update_measures <- TRUE
+update_measures <- FALSE
 
 # If you have set TRUE and want to update variables, please follow
 # the instructions below. Otherwise you are done and can simply 
@@ -98,7 +98,7 @@ change_measures_cantons <- "CH"
 # and oxford coded variables are updated, then the 
 # automatic translation will override the manual set
 # values for the oxford coded variables
-translate_swiss_coded_variables_to_oxford_variables <- TRUE
+translate_swiss_coded_variables_to_oxford_variables <- FALSE
 
 ###################################################################
 # That's it, you can source the script now, the rest is automatic.
@@ -364,3 +364,4 @@ covid_canton_openZH <- merge(measures_KT, ogd_zh_ch, by.x = c("date", "canton"),
 
 # Write the combined dataset as .csv
 fwrite(covid_canton_openZH, paste(directory_location,"COVID_measures_KT_epi_openZH.csv", sep = ""))
+
