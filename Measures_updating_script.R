@@ -78,15 +78,16 @@ update_measures <- FALSE
 ###############
 # Update the values here that you want to be updated
 # First set the variable names here as a list, taking the names as characters from above
-change_measures_variables = list("public_events_npeople", "gatherings_npeople")
+change_measures_variables = list("leisure", "sport", "restaurants","restaurants_tablesize",
+                               "clubs", "clubs_npeople", "public_events_npeople")
 
 # Then set the variable values here, taking the coding detailed above or in the GitHub readme
 # Pay attention that the values are in the same order as the variable names you set above,
 # and that they match the variable type (numerical, character, etc.)
-change_measures_values = list(100, 30)
+change_measures_values = list("open", "open", "open", 0, "open",250, 250)
 
 # Add the date at which a change in measure takes place
-change_measures_date <- "2021-05-31"
+change_measures_date <- "2021-06-26"
 
 # Add the cantons for which the change in measures applies
 # Set to "CH" if change applies to federal level and hence all cantons
@@ -98,7 +99,7 @@ change_measures_cantons <- "CH"
 # and oxford coded variables are updated, then the 
 # automatic translation will override the manual set
 # values for the oxford coded variables
-translate_swiss_coded_variables_to_oxford_variables <- FALSE
+translate_swiss_coded_variables_to_oxford_variables <- TRUE
 
 ###################################################################
 # That's it, you can source the script now, the rest is automatic.
@@ -301,8 +302,7 @@ meteo_data[, outdoor_relative_humidity := mean(as.numeric(ure200d0), na.rm = TRU
 
 #########
 # Indoor relative humidity
-
-# input vectors, humidity in percentages, temperature in °Celsius
+# input vectors, humidity in percentages, temperature in ?Celsius
 outdoor_humidity <- c(meteo_data$outdoor_relative_humidity)
 outdoor_temp_C <- c(meteo_data$mean_temperature) 
 indoor_temp_C <- 20
@@ -312,8 +312,8 @@ outdoor_temp_K <- outdoor_temp_C + 273.15
 indoor_temp_K <- indoor_temp_C + 273.15
 
 # Calculate maximum  vapor pressure over a surface of water at indoor and outdoor temperature (K)
-E_indoor <- exp(-6064.4642 * (indoor_temp_K ^ (-1)) + 21.1249952  - 2.7245552 * (10 ^ (-2)) * indoor_temp_K + 1.6853396 * (10 ^ (-5)) * (indoor_temp_K ^ 2) + 2.4575506 * log(indoor_temp_K)) # Sättigungsdampfdruck
-E_outdoor <- exp(-6064.4642 * (outdoor_temp_K ^ (-1)) + 21.1249952  - 2.7245552 * (10 ^ (-2)) * outdoor_temp_K + 1.6853396 * (10 ^ (-5)) * (outdoor_temp_K ^ 2) + 2.4575506 * log(outdoor_temp_K)) # Sättigungsdampfdruck
+E_indoor <- exp(-6064.4642 * (indoor_temp_K ^ (-1)) + 21.1249952  - 2.7245552 * (10 ^ (-2)) * indoor_temp_K + 1.6853396 * (10 ^ (-5)) * (indoor_temp_K ^ 2) + 2.4575506 * log(indoor_temp_K)) # S?ttigungsdampfdruck
+E_outdoor <- exp(-6064.4642 * (outdoor_temp_K ^ (-1)) + 21.1249952  - 2.7245552 * (10 ^ (-2)) * outdoor_temp_K + 1.6853396 * (10 ^ (-5)) * (outdoor_temp_K ^ 2) + 2.4575506 * log(outdoor_temp_K)) # S?ttigungsdampfdruck
 
 # Calculate maximum  humidity indoor and outdoor via temperature (K)
 P_max_indoor <- E_indoor / (461.5 * indoor_temp_K)
