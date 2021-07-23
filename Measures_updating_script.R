@@ -89,9 +89,14 @@ change_measures_values = list("open", "open", "open", 0, "open",250, 250)
 # Add the date at which a change in measure takes place
 change_measures_date <- "2021-06-26"
 
-# Add the cantons for which the change in measures applies
 # Set to "CH" if change applies to federal level and hence all cantons
 change_measures_cantons <- "CH" 
+
+# Add the cantons for which the change in measures applies 
+change_measures_variables = "facial_coverings_schools"
+change_measures_values ="no"
+change_measures_date <- "2021-06-26"
+change_measures_cantons <- c("NW", "ZH") 
 
 # Set if you want the script to automatically translate
 # the swiss coded variables to the oxford variables
