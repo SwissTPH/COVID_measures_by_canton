@@ -75,28 +75,67 @@ update_measures <- FALSE
 # H6_oxford_facial_coverings, this variable corresponds to:
   # facial_coverings_shops, facial_coverings_public_buildings
 
-###############
-# Update the values here that you want to be updated
-# First set the variable names here as a list, taking the names as characters from above
-change_measures_variables = list("leisure", "sport", "restaurants","restaurants_tablesize",
-                               "clubs", "clubs_npeople", "public_events_npeople")
+# ###############
+# # Update the values here that you want to be updated
+# # First set the variable names here as a list, taking the names as characters from above
+# change_measures_variables = list("leisure", "sport", "restaurants","church", "clubs", "school_university")
+# 
+# # Then set the variable values here, taking the coding detailed above or in the GitHub readme
+# # Pay attention that the values are in the same order as the variable names you set above,
+# # and that they match the variable type (numerical, character, etc.)
+# 
+# change_measures_values = list("open_with_measures", "open_with_measures", "open_with_measures",
+#                               "open_with_measures", "open_with_measures", "open_with_measures")
+# 
+# # Add the date at which a change in measure takes place
+# change_measures_date <- "2021-09-14"
+# 
+# # Set to "CH" if change applies to federal level and hence all cantons
+# change_measures_cantons <- "CH"
+# 
+# change_measures_variables = "C8_oxford_international_travel_control"
+# change_measures_values = 1
+# change_measures_date <- "2021-09-20"
+# change_measures_cantons <- "CH"
+# 
+# #### Add the cantons for which the change in measures applies #####
+# 
+# change_measures_variables = "facial_coverings_schools"
+# change_measures_values ="no"
+# change_measures_date <- "2021-06-26"
+# change_measures_cantons <- c("NW", "ZH")
+# 
+# change_measures_variables = list("facial_coverings_schools", "school_primary_secondary", "school_highschool")
+# change_measures_values = list("no", "open", "open")
+# change_measures_date <- "2021-08-11"
+# change_measures_cantons <- "AG"
 
-# Then set the variable values here, taking the coding detailed above or in the GitHub readme
-# Pay attention that the values are in the same order as the variable names you set above,
-# and that they match the variable type (numerical, character, etc.)
-change_measures_values = list("open", "open", "open", 0, "open",250, 250)
+# change_measures_variables = list("facial_coverings_schools", "school_primary_secondary", "school_highschool")
+# change_measures_values = list("yes", "open_with_measures", "open_with_measures")
+# change_measures_date <- "2021-08-23"
+# change_measures_cantons <- "SH"
 
-# Add the date at which a change in measure takes place
-change_measures_date <- "2021-06-26"
+# change_measures_variables = list("facial_coverings_schools", "school_primary_secondary", "school_highschool")
+# change_measures_values = list("yes", "open_with_measures", "open_with_measures")
+# change_measures_date <- "2021-09-01"
+# change_measures_cantons <- "AG"
+# 
+# change_measures_variables = "clubs"
+# change_measures_values = "open_with_measures"
+# change_measures_date <- "2021-09-13"
+# change_measures_cantons <- "BE"
+# 
+# change_measures_variables = list("facial_coverings_schools", "school_primary_secondary", "school_highschool")
+# change_measures_values = list("yes", "open_with_measures", "open_with_measures")
+# change_measures_date <- "2021-09-13"
+# change_measures_cantons <- "SG"
 
-# Set to "CH" if change applies to federal level and hence all cantons
-change_measures_cantons <- "CH" 
+# change_measures_variables = list("facial_coverings_schools", "school_primary_secondary", "school_highschool", "school_university")
+# change_measures_values = list("yes", "open_with_measures", "open_with_measures", "open_with_measures")
+# change_measures_date <- "2021-09-20"
+# change_measures_cantons <- "BE"
 
-# Add the cantons for which the change in measures applies 
-change_measures_variables = "facial_coverings_schools"
-change_measures_values ="no"
-change_measures_date <- "2021-06-26"
-change_measures_cantons <- c("NW", "ZH") 
+
 
 # Set if you want the script to automatically translate
 # the swiss coded variables to the oxford variables
